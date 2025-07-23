@@ -1,0 +1,206 @@
+/* Google Fonts */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  text-shadow: 0 2px 8px rgba(13,110,253,0.10);
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #ffc107;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: linear-gradient(90deg, #0d6efd 0%, #6f42c1 100%);
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0d6efd 0%, #6f42c1 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation: gradientBG 8s ease-in-out infinite alternate;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.hero-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 7px solid #fff;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+.hero-socials a {
+  transition: color 0.2s, transform 0.2s;
+}
+.hero-socials a:hover {
+  color: #ffc107;
+  transform: scale(1.2) rotate(-8deg);
+}
+
+.btn-primary, .btn-success {
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(13,110,253,0.12);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover, .btn-success:hover {
+  background: #ffc107;
+  color: #222;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 24px rgba(255,193,7,0.18);
+}
+.btn-outline-light {
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.btn-outline-light:hover {
+  background: #fff;
+  color: #0d6efd;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.back-to-top {
+  display: none;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 999;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s, transform 0.2s;
+  position: fixed;
+}
+.back-to-top:hover {
+  background: #6f42c1;
+  transform: scale(1.1);
+}
+
+.about-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 5px solid #0d6efd;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  animation: fadeIn 1.2s;
+}
+
+.card {
+  border-radius: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 12px rgba(111,66,193,0.07);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardReveal 1s forwards;
+}
+@keyframes cardReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(111,66,193,0.13);
+}
+
+.project-card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  transition: filter 0.3s, transform 0.3s;
+}
+.project-card img:hover {
+  filter: brightness(1.08) saturate(1.2);
+  transform: scale(1.04) rotate(-2deg);
+}
+
+.projects-section .card {
+  animation-delay: 0.2s;
+}
+.projects-section .card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.projects-section .card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Contact form animation */
+.contact-section form {
+  animation: fadeIn 1.2s;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+  .hero-img, .about-img {
+    width: 110px;
+    height: 110px;
+  }
+  .project-card img {
+    height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-img, .about-img {
+    width: 90px;
+    height: 90px;
+  }
+  .project-card img {
+    height: 90px;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animations */
+.animate__animated {
+  animation-duration: 1.2s;
+}
+
+/* Section fade-in on scroll */
+.section-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 

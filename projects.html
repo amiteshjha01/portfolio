@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Amitesh Jha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>.section-fade { opacity: 1 !important; transform: none !important; }</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html" aria-label="Amitesh Jha Home">Amitesh Jha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="projects-section py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5 animate__animated animate__fadeInDown">Projects</h2>
+      <!-- Project Filter Bar (UI only) -->
+      <div class="d-flex justify-content-center mb-4 animate__animated animate__fadeInUp">
+        <button class="btn btn-outline-primary mx-1 active">All</button>
+        <button class="btn btn-outline-secondary mx-1">Web</button>
+        <button class="btn btn-outline-secondary mx-1">Data</button>
+        <button class="btn btn-outline-secondary mx-1">IoT</button>
+      </div>
+      <div class="row g-4">
+        <!-- Project 1:  Educaation Arena -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm project-card animate__animated animate__fadeInUp position-relative overflow-hidden">
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center text-center">
+              <h5 class="text-white mb-2"> Educaation Arena</h5>
+              <ul class="text-white small text-start mb-2">
+                <li>Personalized course recommendations (content-based & collaborative filtering)</li>
+                <li>Data analytics for user engagement</li>
+                <li>Modern, responsive UI</li>
+              </ul>
+              <div class="mb-2">
+                <span class="badge bg-primary">Flask</span>
+                <span class="badge bg-success">MongoDB</span>
+                <span class="badge bg-warning text-dark">NumPy</span>
+                <span class="badge bg-info text-dark">Matplotlib</span>
+                <span class="badge bg-secondary">HTML/CSS/JS</span>
+              </div>
+              <a href="https://shorturl.at/5rYSx" class="btn btn-outline-light btn-sm me-2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <img src="assets/educaation.jpg" class="card-img-top" alt="Screenshot of  Educaation Arena project">
+            <div class="card-body">
+              <h5 class="card-title"> Educaation Arena</h5>
+              <p class="card-text">An e-learning web application with a personalized course recommendation system that enhances the learning experience by suggesting courses tailored to users’ interests and needs.</p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <i class="fab fa-python text-primary fs-5" title="Python"></i>
+                <i class="fas fa-database text-success fs-5" title="MongoDB"></i>
+                <i class="fab fa-js-square text-warning fs-5" title="JavaScript"></i>
+                <i class="fab fa-html5 text-danger fs-5" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-primary fs-5" title="CSS3"></i>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100" style="z-index:2;position:relative;">Learn More</button>
+          </div>
+        </div>
+        <!-- Project 2: I-Reserve -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm project-card animate__animated animate__fadeInUp animate__delay-1s position-relative overflow-hidden">
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center text-center">
+              <h5 class="text-white mb-2">I-Reserve</h5>
+              <ul class="text-white small text-start mb-2">
+                <li>Real-time seat booking and availability management</li>
+                <li>Secure student login</li>
+                <li>Mobile-friendly, intuitive interface</li>
+              </ul>
+              <div class="mb-2">
+                <span class="badge bg-primary">Flask</span>
+                <span class="badge bg-success">MySQL</span>
+                <span class="badge bg-secondary">HTML/CSS/JS</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
+              </div>
+            </div>
+            <img src="assets/library.jpg" class="card-img-top" alt="Screenshot of I-Reserve project">
+            <div class="card-body">
+              <h5 class="card-title">I-Reserve</h5>
+              <p class="card-text">A smart web-based application enabling seamless library seat booking and availability management for students, accessible from anywhere, anytime.</p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <i class="fab fa-python text-primary fs-5" title="Python"></i>
+                <i class="fas fa-database text-success fs-5" title="MySQL"></i>
+                <i class="fab fa-bootstrap text-info fs-5" title="Bootstrap"></i>
+                <i class="fab fa-html5 text-danger fs-5" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-primary fs-5" title="CSS3"></i>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100" style="z-index:2;position:relative;">Learn More</button>
+          </div>
+        </div>
+        <!-- Project 3: The Guardian Chip -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm project-card animate__animated animate__fadeInUp animate__delay-2s position-relative overflow-hidden">
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center text-center">
+              <h5 class="text-white mb-2">The Guardian Chip</h5>
+              <ul class="text-white small text-start mb-2">
+                <li>IoT-based safety and monitoring system</li>
+                <li>Web/mobile control panel & real-time alerts</li>
+                <li>Integrated sensors and secure access</li>
+              </ul>
+              <div class="mb-2">
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-success">MongoDB</span>
+                <span class="badge bg-secondary">HTML/CSS</span>
+                <span class="badge bg-info text-dark">IoT</span>
+              </div>
+              <a href="https://shorturl.at/lBJQk" class="btn btn-outline-light btn-sm me-2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <img src="assets/iot.jpg" class="card-img-top" alt="Screenshot of The Guardian Chip project">
+            <div class="card-body">
+              <h5 class="card-title">The Guardian Chip</h5>
+              <p class="card-text">An advanced safety system integrating web tech and IoT, providing a user-friendly web control panel and Android app for enhanced personal security.</p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <i class="fab fa-react text-info fs-5" title="React"></i>
+                <i class="fas fa-database text-success fs-5" title="MongoDB"></i>
+                <i class="fab fa-html5 text-danger fs-5" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-primary fs-5" title="CSS3"></i>
+                <i class="fas fa-microchip text-secondary fs-5" title="IoT"></i>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100" style="z-index:2;position:relative;">Learn More</button>
+          </div>
+        </div>
+        <!-- Project 4: Aptech Learning -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm project-card animate__animated animate__fadeInUp animate__delay-3s position-relative overflow-hidden">
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center text-center">
+              <h5 class="text-white mb-2">Aptech Learning</h5>
+              <ul class="text-white small text-start mb-2">
+                <li>Live website for Aptech Learning Dwarka</li>
+                <li>Contact form with FormSubmit (no backend needed)</li>
+                <li>Modern, responsive design</li>
+              </ul>
+              <div class="mb-2">
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-info text-dark">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+              </div>
+              <a href="https://aptechdwarka.com/" class="btn btn-outline-light btn-sm me-2" target="_blank"><i class="fas fa-globe"></i> Live</a>
+            </div>
+            <img src="assets/aptech.png" class="card-img-top" alt="Screenshot of Aptech Learning project">
+            <div class="card-body">
+              <h5 class="card-title">Aptech Learning</h5>
+              <p class="card-text">A modern, responsive website for Aptech Learning Dwarka, featuring a live contact form and seamless user experience.</p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <i class="fab fa-html5 text-danger fs-5" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-primary fs-5" title="CSS3"></i>
+                <i class="fab fa-js-square text-warning fs-5" title="JavaScript"></i>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100" style="z-index:2;position:relative;">Learn More</button>
+          </div>
+        </div>
+        <!-- Project 5: Freelancing Project (dprasad.in) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm project-card animate__animated animate__fadeInUp animate__delay-4s position-relative overflow-hidden">
+            <div class="project-overlay d-flex flex-column justify-content-center align-items-center text-center">
+              <h5 class="text-white mb-2">dprasad.in (Freelance)</h5>
+              <ul class="text-white small text-start mb-2">
+                <li>Personal website for a client</li>
+                <li>Modern, responsive UI with Bootstrap</li>
+                <li>Dynamic content with Flask & SQLite</li>
+              </ul>
+              <div class="mb-2">
+                <span class="badge bg-primary">Flask</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
+                <span class="badge bg-success">SQLite</span>
+                <span class="badge bg-info text-dark">HTML</span>
+                <span class="badge bg-info text-dark">CSS</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+              </div>
+              <a href="https://dprasad.in" class="btn btn-outline-light btn-sm me-2" target="_blank"><i class="fas fa-globe"></i> Live</a>
+            </div>
+            <img src="assets/insolvency.jpg" class="card-img-top" alt="Screenshot of dprasad.in project">
+            <div class="card-body">
+              <h5 class="card-title">dprasad.in (Freelance)</h5>
+              <p class="card-text">A personal website for a client, built with HTML, CSS, JavaScript, Bootstrap, Flask, and SQLite. Features a modern, responsive design and dynamic content management. <span class="badge bg-info">Freelance</span></p>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <i class="fab fa-html5 text-danger fs-5" title="HTML5"></i>
+                <i class="fab fa-css3-alt text-primary fs-5" title="CSS3"></i>
+                <i class="fab fa-js-square text-warning fs-5" title="JavaScript"></i>
+                <i class="fab fa-bootstrap text-info fs-5" title="Bootstrap"></i>
+                <i class="fas fa-database text-success fs-5" title="SQLite"></i>
+                <i class="fab fa-python text-primary fs-5" title="Flask"></i>
+              </div>
+            </div>
+            <button class="btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100" style="z-index:2;position:relative;">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <style>
+  .project-card {
+    transition: box-shadow 0.3s, transform 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  .project-card:hover {
+    box-shadow: 0 8px 32px rgba(111,66,193,0.18);
+    transform: translateY(-8px) scale(1.04);
+  }
+  .project-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(120deg, rgba(13,110,253,0.92) 0%, rgba(111,66,193,0.92) 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 2;
+    padding: 2rem 1rem;
+    pointer-events: none;
+  }
+  .project-card:hover .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .project-card .card-body {
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .project-card img {
+    z-index: 0;
+  }
+  .badge {
+    font-size: 0.85rem;
+    margin-right: 0.2rem;
+  }
+  @media (max-width: 991px) {
+    .project-overlay { padding: 1.2rem 0.5rem; }
+  }
+  @media (max-width: 767px) {
+    .project-card .card-body { padding: 1rem; }
+    .project-overlay { font-size: 0.95rem; }
+  }
+  </style>
+
+  <!-- Add modals for each project at the end of the file -->
+
+  <!--  Educaation Arena Modal -->
+  <div class="modal fade" id="modal- Educaation-arena" tabindex="-1" aria-labelledby="modal EducaationArenaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content animate__animated animate__fadeInUp">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modal EducaationArenaLabel"> Educaation Arena</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Duration:</strong> Sep 2024 – Jun 2025</p>
+          <p><strong>Tech Stack:</strong> Flask, MongoDB, NumPy, Matplotlib, HTML, CSS, JavaScript</p>
+          <p><strong>Role:</strong> Full Stack Developer</p>
+          <p><strong>Project Overview:</strong> Developed an e-learning web application with a personalized course recommendation system that enhances the learning experience by suggesting courses tailored to users’ interests and needs.</p>
+          <ul>
+            <li>Implemented content-based and collaborative filtering for recommendations.</li>
+            <li>Built analytics dashboards using Pandas and Matplotlib.</li>
+            <li>Designed a modern, responsive UI with Bootstrap.</li>
+          </ul>
+          <p><strong>Challenges & Solutions:</strong></p>
+          <ul>
+            <li>Challenge: Aligning recommendations with user goals. <br>Solution: Used data analytics to refine algorithms and improve accuracy.</li>
+            <li>Challenge: Visualizing user trends. <br>Solution: Integrated Matplotlib for interactive charts.</li>
+          </ul>
+          <a href="https://shorturl.at/5rYSx" class="btn btn-primary" target="_blank">Live Demo</a>
+          <a href="projects.html" class="btn btn-outline-secondary">Project Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- I-Reserve Modal -->
+  <div class="modal fade" id="modal-i-reserve" tabindex="-1" aria-labelledby="modalIReserveLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content animate__animated animate__fadeInUp">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalIReserveLabel">I-Reserve</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Duration:</strong> Jun 2024 – Oct 2024</p>
+          <p><strong>Tech Stack:</strong> Python, Flask, HTML, CSS, Bootstrap, SQL (MySQL)</p>
+          <p><strong>Role:</strong> Backend & UI Developer</p>
+          <p><strong>Project Overview:</strong> A smart web-based application enabling seamless library seat booking and availability management for students, accessible from anywhere, anytime.</p>
+          <ul>
+            <li>Real-time seat booking and availability management.</li>
+            <li>Secure student login and user-friendly interface.</li>
+            <li>Mobile-friendly, intuitive design.</li>
+          </ul>
+          <p><strong>Challenges & Solutions:</strong></p>
+          <ul>
+            <li>Challenge: Ensuring real-time updates. <br>Solution: Used AJAX and Flask for dynamic updates.</li>
+            <li>Challenge: Security for student login. <br>Solution: Implemented robust authentication and validation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Guardian Chip Modal -->
+  <div class="modal fade" id="modal-guardian-chip" tabindex="-1" aria-labelledby="modalGuardianChipLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content animate__animated animate__fadeInUp">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalGuardianChipLabel">The Guardian Chip</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Duration:</strong> Sep 2023 – May 2024</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, React, IoT, MongoDB</p>
+          <p><strong>Role:</strong> IoT & Frontend Developer</p>
+          <p><strong>Project Overview:</strong> An advanced safety system integrating web tech and IoT, providing a user-friendly web control panel and Android app for enhanced personal security.</p>
+          <ul>
+            <li>Real-time monitoring and alert system.</li>
+            <li>Integrated sensors and secure access.</li>
+            <li>Web/mobile control panel for users.</li>
+          </ul>
+          <p><strong>Challenges & Solutions:</strong></p>
+          <ul>
+            <li>Challenge: Real-time data from IoT devices. <br>Solution: Used REST APIs and WebSockets for live updates.</li>
+            <li>Challenge: User-friendly interface. <br>Solution: Designed intuitive React UI and mobile app.</li>
+          </ul>
+          <a href="https://shorturl.at/lBJQk" class="btn btn-primary" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aptech Learning Modal -->
+  <div class="modal fade" id="modal-aptech-learning" tabindex="-1" aria-labelledby="modalAptechLearningLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content animate__animated animate__fadeInUp">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalAptechLearningLabel">Aptech Learning</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Duration:</strong> Apr 2025</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+          <p><strong>Role:</strong> Web Developer</p>
+          <p><strong>Project Overview:</strong> Modern, responsive website for Aptech Learning Dwarka, featuring a live contact form and seamless user experience.</p>
+          <ul>
+            <li>Designed and deployed a live website contact form using FormSubmit.</li>
+            <li>Implemented a modern, responsive UI with Bootstrap.</li>
+          </ul>
+          <a href="https://aptechdwarka.com/" class="btn btn-primary" target="_blank">Live Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dprasad.in Modal -->
+  <div class="modal fade" id="modal-dprasad-in" tabindex="-1" aria-labelledby="modalDprasadInLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content animate__animated animate__fadeInUp">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="modalDprasadInLabel">dprasad.in (Freelance)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Duration:</strong> 2024</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Flask, SQLite</p>
+          <p><strong>Role:</strong> Freelance Web Developer</p>
+          <p><strong>Project Overview:</strong> Personal website for a client, built with Flask & SQLite. Features a modern, responsive design and dynamic content management.</p>
+          <ul>
+            <li>Developed all frontend and backend features.</li>
+            <li>Integrated Bootstrap for responsive UI.</li>
+            <li>Deployed and maintained the live site.</li>
+          </ul>
+          <a href="https://dprasad.in" class="btn btn-primary" target="_blank">Live Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Learn More buttons to each project card -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const modals = {
+      ' Educaation Arena': 'modal- Educaation-arena',
+      'I-Reserve': 'modal-i-reserve',
+      'The Guardian Chip': 'modal-guardian-chip',
+      'Aptech Learning': 'modal-aptech-learning',
+      'dprasad.in (Freelance)': 'modal-dprasad-in'
+    };
+    document.querySelectorAll('.project-card').forEach(card => {
+      const title = card.querySelector('.card-title').textContent.trim();
+      let btn = card.querySelector('.learn-more-btn');
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.className = 'btn btn-outline-primary btn-sm mt-2 learn-more-btn w-100';
+        btn.textContent = 'Learn More';
+        card.querySelector('.card-body').appendChild(btn);
+      }
+      btn.onclick = function() {
+        const modalId = modals[title];
+        if (modalId) {
+          const modal = new bootstrap.Modal(document.getElementById(modalId));
+          modal.show();
+        }
+      };
+    });
+  });
+  </script>
+</body>
+</html> 
